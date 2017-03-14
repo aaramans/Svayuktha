@@ -1,0 +1,46 @@
+{
+  "name": "Svayuktha",
+  "version": "0.1.0",
+  "description": "",
+  "authors": "Aditya Ananta Raman S, Sowmya, Srinivas",
+  "homepage": "https://github.com/aaramans/Svayuktha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaramans/Svayuktha.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.8.2",
+    "compression": "^1.1.0",
+    "cors": "^2.2.0",
+    "express": "^4.9.3",
+    "mongoose": "4.8.4",
+    "mongoose-auto-increment": "^5.0.1",
+    "morgan": "^1.1.1",
+    "password-hash": "1.2.2",
+    "randomstring": "^1.1.5",
+    "serve-favicon": "^2.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "gulp": "latest",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-connect": "latest",
+    "gulp-inject": "^4.2.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "latest",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "jshint": "^2.9.4",
+    "wiredep": "^4.0.0",
+    "yargs": "^6.6.0"
+  }
+}

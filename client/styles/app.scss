@@ -1,0 +1,13 @@
+.wrapper {
+    .main_container{
+        padding-top:5%;
+        .fa-edit:before{
+            color :#2f4f4f;
+            cursor: pointer;
+        }
+        .fa-remove:before {
+            color :#ff4500;
+            cursor: pointer;
+        }
+    }
+}

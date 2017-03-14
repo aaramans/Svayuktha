@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="table-responsive" ng-if="users.length>0">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>User Name</th>
+                    <th>User Type</th>
+                    <th>Status</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users">
+                    <td>{{$index + 1}}</td>
+                    <td>{{user.fname}}</td>
+                    <td>{{user.lname}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.mobile}}</td>
+                    <td>{{user.uname}}</td>
+                    <td>{{user.utype}}</td>
+                    <td>{{user.status}}</td>
+                    <td><i class="fa fa-edit" aria-hidden="true"></i> | <i class="fa fa-remove" aria-hidden="true"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div ng-if="users.length===0">
+        <span>No Users found</span>
+    </div>
+</div>
