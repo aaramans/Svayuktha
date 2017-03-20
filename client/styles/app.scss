@@ -1,3 +1,6 @@
+body{
+    background:antiquewhite;
+}
 .wrapper {
     .main_container{
         padding-top:5%;
@@ -8,6 +11,74 @@
         .fa-remove:before {
             color :#ff4500;
             cursor: pointer;
+        }
+
+        .parallax-container{
+            min-height: 380px;
+            line-height: 0;
+            height: auto;
+            .section{
+                width:100%;
+            }
+        }
+        .parallax{
+            img{
+                display:block;
+                height:680px;
+            }
+        }
+
+        .container{
+            &.third-block{
+                margin-top:32px;
+            }
+        }
+        .section{
+            .content{
+                text-align:center;
+            }
+            .content1{
+               text-align:initial;
+                p{
+                    width:80%;
+                    display:inline-block;
+                }
+                img{
+                     float:right;
+                }
+            }
+            .content,.content1{
+                img{
+                    width:110px;
+                    height:110px;
+                }
+            }
+        }
+        .card{
+            .card-reveal{
+                 padding: 14px;
+                p{
+                    font-size: 15px;
+                    margin: 0;
+                    line-height: 2;
+                }
+                h6{
+                    line-height: 2;
+                }
+                ul{
+                    padding-left: 22px;
+                    li{
+                        list-style-type:initial;
+                    }
+                }
+            }
+            .card-image{
+                img{
+                    padding: 12px;
+                    width: 218px;
+                    height: 200px;
+                }
+            }
         }
     }
 }

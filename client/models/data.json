@@ -1,0 +1,135 @@
+[{
+   "name" : "Employee 1",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"UI Developer",
+    "src":"images/team1.png",
+   "Releases" : [
+       {
+          "name" : "AIP Long form"
+       },
+       {
+          "name" : "Accessibility"
+       }
+   ]
+},
+{
+   "name" : "Employee 2",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"Tester",
+    "src":"images/tester.png",
+   "Releases" : [
+       {
+          "name" : "AIP Long form"
+       },
+       {
+          "name" : "Accessibility"
+       }
+   ]
+},
+ {
+   "name" : "Employee 3",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"CQ Developer",
+    "src":"images/cq.png",
+   "Releases" : [
+       {
+          "name" : "AIP Long form"
+       },
+       {
+          "name" : "Accessibility"
+       }
+   ]
+},
+  {
+   "name" : "Employee 4",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"UI Developer",
+    "src":"images/developer.png",
+   "Releases" : [
+       {
+          "name" : "AIP Long form"
+       },
+       {
+          "name" : "Accessibility"
+       }
+   ]
+},
+  {
+   "name" : "Employee 5",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"RM",
+    "src":"images/rm.png",
+   "Releases" : [
+       {
+          "name" : "All the releases till R7"
+       }
+
+   ]
+},
+  {
+   "name" : "Employee 6",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"UI Developer",
+    "src":"images/ui.png",
+   "Releases" : [
+       {
+          "name" : "AIP Long form"
+       },
+       {
+          "name" : "Accessibility"
+       }
+   ]
+},
+ {
+   "name" : "Employee 7",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"UI Developer",
+    "src":"images/team1.png",
+   "Releases" : [
+       {
+          "name" : "AIP Long form"
+       },
+       {
+          "name" : "Accessibility"
+       },
+       {
+          "name" : "Currency Calculator"
+       }
+   ]
+},
+ {
+   "name" : "Employee 8",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"Tester",
+    "src":"images/test1.png",
+   "Releases" : [
+       {
+          "name" : "Rebrand Hero Shelf"
+       },
+       {
+          "name" : "Accessibility"
+       },
+       {
+          "name" : "Currency Calculator"
+       }
+   ]
+},
+ {
+   "name" : "Employee 9",
+   "description" : "He was the one of the members worked from the starting of the project",
+   "role":"CQ Developer",
+    "src":"images/team1.png",
+   "Releases" : [
+       {
+          "name" : "Rebrand Hero Shelf"
+       },
+       {
+          "name" : "Smart Banner"
+       },
+       {
+          "name" : "Logo Change"
+       }
+   ]
+}
+
+]

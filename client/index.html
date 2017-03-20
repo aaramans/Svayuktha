@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
@@ -20,7 +22,94 @@
 <body ng-app="meanApp" ng-controller="mainContrl">
     <div class="wrapper">
         <div class="page-header" ng-controller="NavContrl" ng-include="'views/nav.html'"></div>
-        <div class="main_container" ng-view></div>
+        <div class="main_container" ng-view>
+            <div id="index-banner" class="parallax-container">
+		      <div class="section">
+			     <div class="container">
+				    <h1 class="header center">RBS Remembers</h1>
+				    <div class="row center">
+                        <h5 class="header">About 5000+ employees have worked in the RBS account</h5>
+				    </div>
+				    <div class="row center">
+                        <a href="info.html" target="_blank" class="btn-large">GET STARTED</a>
+				    </div>
+			     </div>
+		      </div>
+		      <div class="parallax">
+                <img src="images/team.png">
+              </div>
+	       </div>
+            <div class="container">
+                <div class="section">
+                    <div class="row content">
+                        <div class="col s12 m4">
+                            <img src="images/emp2.png">
+                            <h5>Development</h5>
+                        </div>
+                        <div class="col s12 m4">
+                            <img src="images/emp-w1.png">
+                            <h5>Development</h5>
+                        </div>
+                        <div class="col s12 m4">
+                            <img src="images/emp1.png">
+                            <h5>Development</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section">
+                    <div class="row content1">
+                        <div class="col s12">
+                        <h5>Employee1</h5>
+                        <p>He was one of the member in RBS project. He worked in UI and was from the starting of the project abd worked on various releases.</p>
+                            <img src="images/emp.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="section">
+                    <div class="container">
+                        <h1 class="header center">RBS Remembers</h1>
+                        <div class="row center">
+                            <h5 class="header">About 5000+ employees have worked in the RBS account</h5>
+                        </div>
+                        <div class="row center">
+                            <a href="#" class="btn-large">GET STARTED</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="parallax">
+                    <img src="images/work.png">
+                </div>
+	       </div>
+           <div class="container third-block">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                         <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/team1.png">
+                          </div>
+                            <div class="card-content">
+                                  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                           <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                    </div>
+                        <div class="col s12 m4">
+                            <h5>Development</h5>
+                        </div>
+                        <div class="col s12 m4">
+                            <h5>Development</h5>
+                    </div>
+                </div>
+	       </div>
+        </div>
         <!--<login-modal></login-modal>-->
         <footer>&copy;2017</footer>
     </div>
@@ -35,10 +124,17 @@
     <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <!-- endbower-->
 
     <!-- inject:js -->
     <script src="/client/assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+      $('.parallax').parallax();
+      });
+    </script>
     <!-- endinject-->
 </body>
 
