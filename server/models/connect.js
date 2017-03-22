@@ -6,7 +6,6 @@ db.on('error', function(){
 });
 db.once('open', function() {
   console.log("[Debug info----]","Connected to database");
-  require('../models/schema');
 });
 
-mongoose.connect('mongodb://localhost/libraryApp');
+mongoose.connect('mongodb://localhost/svayuktha');
