@@ -12,6 +12,9 @@
         $scope.signIn = function () {
             $scope.openDialog();
         };
+        $scope.signUp = function () {
+            $scope.openDialog1();
+        };
 
         $scope.signOut = function () {
             var params = {};
@@ -34,6 +37,20 @@
                 size : 'sm',
                 openedClass : 'login_box',
                 templateUrl : 'views/login.html',
+                controller : 'modalCtrl'/*,
+                resolve : {
+                    isSignedIn : function() {
+                        console.log('In resolve---', $scope.status.isSignedIn);
+                        return $scope.status.isSignedIn;
+                    }
+                }*/
+            });
+        };
+        $scope.openDialog1 = function () {
+            var modalInstance = $uibModal.open({
+                size : 'md',
+                openedClass : 'Signup',
+                templateUrl : 'views/signup.html',
                 controller : 'modalCtrl'/*,
                 resolve : {
                     isSignedIn : function() {

@@ -33,71 +33,9 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right" ng-if="!status.isSignedIn">
-            <li class="navBtns registerBtn"><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a></li>
+            <li class="navBtns registerBtn"><a href="javascript:void(0);"  ng-click="signUp();" ><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a></li>
             <li class="navBtns signInBtn"><a href="javascript:void(0);" ng-click="signIn();"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a></li>
-                <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
 
-                  <!-- Modal content-->
-                  <div class="modal-content">
-<!--
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
--->
-                    <div class="modal-body">
-                       <div id="signup">
-                            <div class="signup-screen">
-                                <div class="space-bot text-center">
-                                    <h1>Sign Up</h1>
-                                    <div class="divider"></div>
-                                </div>
-                                <form class="form-register" method="post" name="register" ng-submit="submitForm()">
-                                    <div class="input-field col s6">
-                                    <label for="first-name"></label>
-                                    <input id="first-name" placeholder="First name" type="text" class="form-control" ng-model="signup.fname">
-                                    <span ng-show="errorfname">{{errorfname}}</span>
-                                    </div>
-                                    <div class="input-field col s6">
-                                    <label for="last-name"></label>
-                                    <input id="last-name" placeholder="Last name" type="text" class="form-control" ng-model="signup.lname">
-                                    <span ng-show="errorlname">{{errorlname}}</span>
-                                    </div>
-                                    <div class="input-field col s6">
-                                    <label for="phone-no"></label>
-                                    <input id="phone-no" placeholder="Phone Number" type="text" class="form-control" ng-model="signup.phno">
-                                    <span ng-show="errorphno">{{errorphno}}</span>
-                                    </div>
-                                    <div class="input-field col s6">
-                                    <label for="email-id"></label>
-                                    <input id="email-id" placeholder="Email ID" class="validate" class="form-control" type="text" ng-model="signup.email">
-                                    <span ng-show="erroremail">{{erroremail}}</span>
-                                    </div>
-                                    <div class="input-field col s6">
-                                    <label for="password"></label>
-                                    <input id="password" ng-minlength='6' placeholder="Password" class="form-control" type="password" ng-model="signup.pwd">
-
-                                    </div>
-                                    <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
-                                    <i class="material-icons left">done</i> Done
-                                    </button>
-                                    <button type="button" class="waves-effect waves-light btn cancel">
-                                    <i class="material-icons left">clear</i>Cancel
-                                    </button>
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-<!--
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
--->
-                  </div>
-
-                </div>
-              </div>
         </ul>
     </div>
 </nav>
