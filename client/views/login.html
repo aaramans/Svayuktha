@@ -2,6 +2,7 @@
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" ng-click="cancel();">&times;</span></button>
     <h4 class="modal-title" id="myModalLabel">Sign In</h4>
 </div>
+<div class="signup-screen">
 <div class="modal-body">
     <form name="loginFrm" novalidate>
         <div class="form-group">
@@ -19,4 +20,5 @@
 <div class="modal-footer">
     <button type="button" class="btn btn-default" ng-click="cancel();">Cancel</button>
     <button type="button" class="btn btn-primary" ng-click="ok();" ng-disabled="loginFrm.$pristine || !loginFrm.$valid">Sign In</button>
+</div>
 </div>
