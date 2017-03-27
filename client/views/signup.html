@@ -18,12 +18,12 @@
                         <form class="form-register" method="post" name="register" ng-submit="submitForm()">
                             <div class="input-field col s6">
                             <label for="first-name"></label>
-                            <input id="first-name" placeholder="First name" type="text" class="form-control" ng-model="signup.fname">
+                            <input id="first-name" placeholder="First name" required type="text" class="form-control" ng-model="signup.fname">
                             <span ng-show="errorfname">{{errorfname}}</span>
                             </div>
                             <div class="input-field col s6">
                             <label for="last-name"></label>
-                            <input id="last-name" placeholder="Last name" type="text" class="form-control" ng-model="signup.lname">
+                            <input id="last-name" placeholder="Last name" type="text" required class="form-control" ng-model="signup.lname">
                             <span ng-show="errorlname">{{errorlname}}</span>
                             </div>
                             <div class="input-field col s6">
@@ -33,12 +33,12 @@
                             </div>
                             <div class="input-field col s6">
                             <label for="email-id"></label>
-                            <input id="email-id" placeholder="Email ID" class="validate" class="form-control" type="text" ng-model="signup.email">
+                            <input id="email-id" placeholder="Email ID" class="validate" required class="form-control" type="text" ng-model="signup.email">
                             <span ng-show="erroremail">{{erroremail}}</span>
                             </div>
                             <div class="input-field col s6">
                             <label for="password"></label>
-                            <input id="password" ng-minlength='6' placeholder="Password" class="form-control" type="password" ng-model="signup.pwd">
+                            <input id="password" ng-minlength='6' placeholder="Password" required class="form-control" type="password" ng-model="signup.pwd">
 
                             </div>
                             <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">

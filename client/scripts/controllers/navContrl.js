@@ -51,7 +51,7 @@
                 size : 'md',
                 openedClass : 'Signup',
                 templateUrl : 'views/signup.html',
-                controller : 'modalCtrl'/*,
+                controller : 'signupCtrl'/*,
                 resolve : {
                     isSignedIn : function() {
                         console.log('In resolve---', $scope.status.isSignedIn);
@@ -84,4 +84,19 @@
             $uibModalInstance.dismiss('cancel');
         };
     }]);
+
+    app.controller('signupCtrl'),['$scope','localStorageService','$location','serviceCall','$uibModalInstance',function($scope,localStorageService, $location, serviceCall, $uibModalInstance){
+        $scope.submitForm=function(){
+            if(signup.fname=='' || signup.lname=='' || signup.phno==''|| signup.email=='' ||signup.pwd==''){
+                alert("Please enter all the mandatory feilds");
+            }
+            else{
+                serviceCall.postData('signup',$scope.signup,'on').then(function(result){
+                    console.log("Value entered");
+                });
+            }
+
+        }
+    }]);
+
 })();
